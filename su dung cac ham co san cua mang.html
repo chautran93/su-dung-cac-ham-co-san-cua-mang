@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // let mycolor = ["red","black","green","yelow","blue"];
+        // let a = mycolor.toString(mycolor);
+        // document.write(a);
+
+
+
+        //     let a = prompt('Enter Numbers:');
+        //     let b = a.toString();
+        //     let result = [b[0]];
+        //     console.log(b);
+        //     for (i = 0; i < b.length; i++) {
+        //         if (b[i] % 2 === 0) {
+        //             result.push('-', b[i]);
+        //         }
+
+        //     else {
+        //         result.push(b[i]);
+        //     }
+        // }
+        //     document.write(result.join(''));
+
+
+        // let value = prompt('Nhập vào một chuỗi muốn chuyển đổi:');
+        // let upper = 'QWERTYUIOPASDFGHJKLZXCVBNM';
+        // let lower = 'qwertyuiopasdfghjklzxcvbnm';
+        // let result = [];
+        // for (i = 0; i < value.length; i++) {
+        //     if (upper.indexOf(value[i]) !== -1) {
+        //         result.push(value[i].toLocaleLowerCase());
+        //     } else {
+        //         if (lower.indexOf(value[i]) !== -1) {
+        //             result.push(value[i].toLocaleUpperCase());
+        //         }
+        //         else {
+        //             result.push(value[i]);
+        //         }
+        //     }
+        //     document.write (result.join(''));
+
+
+        let str = prompt('');
+        let UPPER = 'QWERTYUIOPLKJHGFDSAZXCVBNM';
+        let LOWER = 'qwertyuioplkjhgfdsazxcvbnm';
+        let result = [];
+
+        for (x = 0; x < str.length; x++) {
+            if (UPPER.indexOf(str[x]) !== -1 ) {
+                result.push(str[x].toLowerCase());
+            }
+            else if (LOWER.indexOf(str[x]) !== -1 ) {
+                result.push(str[x].toUpperCase());
+            }
+            else {
+                result.push(str[x]);
+            }
+        }
+        document.write(result.join(''));
+    </script>
+</body>
+
+</html>
